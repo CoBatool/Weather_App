@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Weather APP</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class= "row">
+            <!-- Info of about today-->
+            
+            <div class ="col-2 currentinfo"><strong> Montreal, QC 📍</strong> <br/>
+            <span id= "currentTime">Tuesday 5:00 p.m </span></br>
+            Sunny <a href="#" class = "Celcius"> °C </a> | <a href="#" class="Fahrenheit">°F</a> </div>
+           
+            <!-- search button-->
+        <div class="col-5 locationBtn"> 
+            <form id = "locationSearch">
+               <input id = "searchCity" type ="text" placeholder= "Where to next?"> </input>
+               <button class ="searchBtn">
+                   Go
+               </button>
+            </form>
+<form>               <p class ="locateMeBtn">
+                 <button type="button" class="btn btn-outline-success">Locate me </button>
+               </p>
+            </form> 
+            
+        </div>
+        <!-- End first ROW-->
+        </div>
+       <!-- Second ROW-->
+        <!-- More info abt today-->
+        <div class = "row">
+            <div class="col">
+                <div class = "moreInfoCurrently">
+                precipitation: 1% <br/>
+                Humidity: 43% <br/>
+                Wind: 2km/h
+                </div>
+            </div>
+            <!-- Today emoji -->
+            <div class="col-2">
+                <div class = "todayEmoji">
+                    <p> 
+                    🌞</div>
+                    </p>
+                
+            </div>
+
+            <!-- Big version of today's weather-->
+
+            <div class ="col">
+                <div class = "celcius_location">
+                    <p>
+                        <h1> <span id="currentTemp">18°C </span> </br>
+                       <span id=currentLocation> Montreal</span></h1>
+                    </p>
+                </div>
+            </div>
+        <!-- END OF SECOND ROW-->
+        </div>
+
+        <!--Third Row-->
+        <!--Emoji for next days weathers -->
+        <div class = "row" >
+            <div class ="col" >
+                <div class = "Day1Emoji">
+                    <div>
+                        
+                            ⛅
+                    
+                    </div> 
+                </div>    
+            </div>
+
+            <div class="col">
+                <div class="Day2Emoji">
+                    <div>
+                    
+                        ⛅
+                     
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="Day3Emoji">
+                    <div>
+                        
+                            🌞
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="Day4Emoji">
+                    <div>
+                            ☔
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="Day5Emoji">
+                    <div>
+                            ☔
+                    </div>
+                </div>
+            </div>
+               
+                        
+    <!--END OF 3RD Row-->
+        </div>
+
+    <!--Fourth Row-->
+
+    <!--Weather of next Days under emoji -->
+                <div class="DaysOfWeek">
+
+        <div class ="row">
+            <div class ="col"> 
+            <p>
+                Wed. </br>
+                22°C
+            </p>
+            </div>
+            <div class="col">
+            <p>
+                Thu. </br>
+                21°C
+            </p>
+            </div>
+
+            <div class="col">
+            <p>
+                Fri.</br>
+                22°C
+            </p>
+            </div>
+
+            <div class="col">
+                <p>
+                    Sat.</br>
+                    18°C
+                </p>
+            </div>
+
+            <div class="col">
+                <p>
+                    Sun.</br>
+                    22°C
+                </p>
+                </div>
+        <!--END OF 4th ROW-->
+            </div>
+
+            <p id ="copyRight">
+                © Saima Syed
+            </p>
+            </div>
+    </div>
+
+    <script src="src/index.js"> </script>
+
+  </body>
+</html>
