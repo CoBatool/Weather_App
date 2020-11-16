@@ -127,4 +127,4 @@ function formatDate(timestamp) {
   let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", displayCelsiusTemperature);
   
-  search("Canada");
+  search("Montreal");
