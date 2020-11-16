@@ -12,9 +12,25 @@ function formatDate(timestamp) {
       "Friday",
       "Saturday"
     ];
-    let day = days[date.getDay()];
-    return `${day} ${formatHours(timestamp)}`;
-  }
+    
+    let months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ];
+
+  let day = days[date.getDay()];
+  return ` ${months[date.getMonth()]} ${date.getDate()}, ${day} ${formatHours(timestamp)}`;
+}
   
   function formatHours(timestamp) {
     let date = new Date(timestamp);
